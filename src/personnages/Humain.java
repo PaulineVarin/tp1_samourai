@@ -38,12 +38,12 @@ public class Humain {
 	}
 	
 	public void direBonjour() {
-		parler("Bonjour ! Je m’appelle"+this.nom+", j’aime boire du"+this.boisson+
-				"et j’ai"+this.argent+"sous en poche"); 
+		parler("Bonjour ! Je m’appelle "+this.nom+", j’aime boire du "+this.boisson+
+				" et j’ai "+this.argent+" sous en poche"); 
 	}
 	
 	public void boire() {
-		parler("Mmmm, un bon verre de"+this.boisson+"! GLOUPS !");
+		parler("Mmmm, un bon verre de "+this.boisson+" ! GLOUPS !");
 	}
 	
 	public void gagnerArgent(int n) {

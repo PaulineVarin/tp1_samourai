@@ -6,7 +6,7 @@ public class Commercant extends Humain{
 	//Attributs
 	
 	//Constructeur 
-	Commercant (String nom, int argent ) {
+	public Commercant (String nom, int argent ) {
 		super(nom,argent,"thé") ; //appel au constrcuteur de la classe mère
 	}
 	
