@@ -44,7 +44,7 @@ public class Yakuza extends Humain{
 	}
 	
 	public int perdreDuel () {
-		//perd tout son argent 
+		//stocke l'agent avant la perte + perd tout son argent 
 		int argentYakuza = super.getArgent() ; 
 		this.perdreArgent(argentYakuza);
 		
@@ -52,7 +52,7 @@ public class Yakuza extends Humain{
 		this.reputation-- ; 
 		
 		//annonce sa défaite
-		super.parler("J’ai perdu mon duel et mes"+argentYakuza+"sous, snif...");
+		super.parler("J’ai perdu mon duel et mes "+argentYakuza+" sous, snif...");
 		
 		//on retourne l'argent du Yakuza avant le duel
 		return argentYakuza; 
