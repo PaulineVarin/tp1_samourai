@@ -1,4 +1,5 @@
 package personnages.secondaires;
+import personnages.*;
 import personnages.principaux.*;
 
 public class Traitre extends Samourai {
@@ -28,6 +29,16 @@ public class Traitre extends Samourai {
 			parler("Je ne peux plus extorquer");
 		}
 		
+	}
+	
+	public void faireLeGentil(Humain h, int n) {
+		h.gagnerArgent(n);
+		perdreArgent(n);
+		if (this.niveauTraitrise>0) {
+			this.niveauTraitrise -= (n/10) ; 
+		} else {
+			parler("Je dois aller récupérer des sous aux commerçants");
+		}
 	}
 
 }
