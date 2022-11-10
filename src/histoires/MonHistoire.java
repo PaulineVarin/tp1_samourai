@@ -19,6 +19,19 @@ public class MonHistoire {
 		ronin.provoquer(yakuza);
 		ronin.direBonjour();
 		
+		//Test pour les samourais
+		Ronin roninSamourai = new Samourai("Pauline", 10, "jus d'ananas", "Varin");
+		roninSamourai.direBonjour();
+		roninSamourai.boire();
+		// appel ci-dessous impossible car la méthode de la classe fille n'est pas accessible dans la classe mère
+		//roninSamourai.boire("jus de pomme");
+		
+		Samourai samourai = new Samourai("Pauline", 10, "jus d'ananas", "Varin");
+		samourai.direBonjour();
+		samourai.boire("jus de pomme");
+		
+		
+		
 		//Lignes pour vérifier certains elements
 		//System.out.println("argent commercant après extorquer "+commercant.getArgent());
 		//System.out.println("argent yakuza apres extorquer"+yakuza.getArgent());
