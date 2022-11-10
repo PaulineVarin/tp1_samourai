@@ -16,9 +16,9 @@ public class Ronin extends Humain {
 	
 	//Méthodes
 	public void donner (int n, Commercant c) {
-		super.parler("Tiens Marchant voilà "+n+" sous");
+		parler("Tiens Marchant voilà "+n+" sous");
 		c.recevoir(n);
-		super.perdreArgent(n);
+		perdreArgent(n);
 	}
 	
 	public void provoquer(Yakuza y) {
@@ -28,18 +28,18 @@ public class Ronin extends Humain {
 		if (honneurRonin>y.getReputation()) {
 			//gagne l'argent du yakuza 
 			int argentSuppRonin = y.perdreDuel() ;
-			super.gagnerArgent(argentSuppRonin);
+			gagnerArgent(argentSuppRonin);
 			
 			//gagne en honneur
 			this.honneur++ ;
 			
 			//annonce sa vicoire
-			super.parler("Je t’ai eu petit yakusa!");
+			parler("Je t’ai eu petit yakusa!");
 		} else {
 			//decrementation honneur
 			this.honneur-- ; 
 			//rale a cause de sa defaite
-			super.parler("J'ai perdu mon duel contre le Yakuza");
+			parler("J'ai perdu mon duel contre le Yakuza");
 			
 			//yakuza gagne son duel
 			y.gagnerDuel();

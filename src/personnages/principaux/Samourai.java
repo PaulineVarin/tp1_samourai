@@ -15,7 +15,7 @@ public class Samourai extends Ronin {
 	//Méthodes
 	public void direBonjour() {
 		super.direBonjour();
-		super.parler("Mon seigneur est "+this.seigneur);
+		parler("Mon seigneur est "+this.seigneur);
 	}
 	
 	public void boire(String boisson) {
