@@ -26,7 +26,7 @@ public class Traitre extends Samourai {
 			c.perdreArgent(argentCommercant);
 			this.niveauTraitrise++ ; 
 		} else {
-			parler("Je ne peux plus extorquer");
+			parler("Je ne peux plus extorquer. Il faut que je fasse des dons.");
 		}
 		
 	}
